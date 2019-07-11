@@ -3,12 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 6.0.0.rc1'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
-gem 'bootsnap', '>= 1.1.0', require: false
-gem 'ably'
-gem 'sucker_punch'
+gem 'puma', '~> 4.0'
+gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development do
   gem 'foreman'
